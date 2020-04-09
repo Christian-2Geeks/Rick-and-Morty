@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.html',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
@@ -21,7 +21,7 @@ module.exports = {
     }
   ]
   },
-  plugin: [
+  plugins: [
     new HTMLWebpackPlugin([
       {
         inject: true,
