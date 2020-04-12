@@ -1,11 +1,11 @@
 language: node_js
 cache:
   directories:
-    - '12'
+    -'12'
 git:
   depth: 3
 script:
-  - yarn build
+  -yarn build
 deplay:
   provider: pages
   edge: true
